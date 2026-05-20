@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha značka</title>
+  <desc id="desc">Samostatná značka Rock'n'Wall Praha s horskou siluetou a monogramem RW.</desc>
+  <defs>
+    <style>
+      .rw { font-family: Arial Black, Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: -8px; }
+    </style>
+  </defs>
+  <rect width="250" height="250" rx="32" fill="#1d252d"/>
+  <path d="M28 201 L28 184 L68 139 L99 155 L151 71 L185 117 L227 53 L227 201 Z" fill="#fbfaf7"/>
+  <path d="M151 71 L185 117 L227 53 L227 201 L168 201 Z" fill="#1f5782"/>
+  <text x="42" y="210" class="rw" font-size="120" fill="#1d252d">RW</text>
+  <path d="M45 214 C88 226 131 226 174 214 C193 208 211 207 227 211 L227 224 C211 220 193 221 174 227 C131 239 88 239 45 227 Z" fill="#b74c2d"/>
+</svg>

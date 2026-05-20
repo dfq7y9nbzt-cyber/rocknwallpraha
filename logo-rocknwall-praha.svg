@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha</title>
+  <desc id="desc">Logo Rock'n'Wall Praha s horsko-skalní siluetou a písmeny RW.</desc>
+  <defs>
+    <style>
+      .rock { fill: #20272d; }
+      .wall { fill: #1f5782; }
+      .wall-dark { fill: #174867; }
+      .wall-light { fill: #2b6d9d; }
+      .accent { fill: #b74c2d; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; fill: #1d252d; letter-spacing: 0; }
+      .rw { font-family: Arial Black, Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: -8px; }
+    </style>
+  </defs>
+  <g transform="translate(60 28)">
+    <path class="rock" d="M34 318 L34 291 L128 176 L200 212 L318 26 L402 128 L500 -32 L642 180 L708 112 L838 318 Z"/>
+    <path class="wall" d="M462 318 L500 -32 L642 180 L708 112 L838 318 Z"/>
+    <path class="wall-light" d="M500 -32 L542 318 L462 318 Z" opacity="0.9"/>
+    <path class="wall-dark" d="M642 180 L708 112 L838 318 L700 318 Z" opacity="0.9"/>
+    <text x="108" y="312" class="rw" font-size="304" fill="#fbfaf7">RW</text>
+    <path class="rock" d="M224 101 C262 98 294 111 294 143 C294 174 269 191 226 191 L198 191 L198 106 C207 104 216 102 224 101 Z"/>
+    <path class="rock" d="M246 238 L322 318 L270 318 L205 246 Z"/>
+    <path class="accent" d="M34 318 C171 355 297 355 416 318 C558 276 700 277 838 318 L838 349 C700 309 558 308 416 349 C297 386 171 386 34 349 Z"/>
+  </g>
+  <text x="65" y="472" class="word" font-size="74">Rock'n'Wall Praha</text>
+</svg>

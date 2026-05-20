@@ -54,15 +54,10 @@ a {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
   width: 44px;
   height: 44px;
-  color: var(--white);
-  background: var(--ink);
-  border-radius: 6px;
-  font-weight: 700;
-  letter-spacing: 0;
+  border-radius: 7px;
+  object-fit: contain;
 }
 
 .brand strong,
@@ -109,6 +104,17 @@ a {
   max-width: 860px;
 }
 
+.hero-logo {
+  display: block;
+  width: min(430px, 100%);
+  height: auto;
+  margin: 0 0 22px;
+  padding: 18px 20px 14px;
+  background: rgba(251, 250, 247, 0.92);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--accent);
@@ -132,8 +138,8 @@ p {
 h1 {
   margin: 0;
   max-width: 920px;
-  font-size: clamp(2.4rem, 7vw, 6rem);
-  line-height: 0.98;
+  font-size: clamp(2.2rem, 5.6vw, 5.3rem);
+  line-height: 1;
 }
 
 h2 {
@@ -404,5 +410,9 @@ h3 {
   .hero-actions,
   .button {
     width: 100%;
+  }
+
+  .hero-logo {
+    padding: 14px 15px 12px;
   }
 }
