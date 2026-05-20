@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha - logo koncept 02f</title>
+  <desc id="desc">Čistý horsko-skalní koncept loga Rock'n'Wall Praha s písmeny RW vyrytými do siluety hor a jedním řádkem názvu.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .panel { fill: #fffdf8; stroke: #ded8cf; stroke-width: 2; rx: 24; }
+      .rock { fill: #20272d; }
+      .wall { fill: #1f5782; }
+      .wall-dark { fill: #174867; }
+      .wall-light { fill: #2b6d9d; }
+      .accent { fill: #b74c2d; }
+      .muted { fill: #66707a; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; fill: #1d252d; letter-spacing: 0; }
+      .note { font-family: Arial, Helvetica, sans-serif; fill: #66707a; font-size: 20px; }
+      .rw { font-family: Arial Black, Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: -8px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="90" y="88" class="word" font-size="42">Rock'n'Wall Praha</text>
+  <text x="92" y="124" class="note">Koncept 02f: jeden řádek názvu, bez podtitulku.</text>
+
+  <g transform="translate(90 170)">
+    <rect class="panel" width="1420" height="690"/>
+
+    <g transform="translate(128 100)">
+      <path class="rock" d="M34 438 L34 411 L128 296 L200 332 L318 146 L402 248 L500 88 L642 300 L708 232 L838 438 Z"/>
+      <path class="wall" d="M462 438 L500 88 L642 300 L708 232 L838 438 Z"/>
+      <path class="wall-light" d="M500 88 L542 438 L462 438 Z" opacity="0.9"/>
+      <path class="wall-dark" d="M642 300 L708 232 L838 438 L700 438 Z" opacity="0.9"/>
+
+      <text x="108" y="432" class="rw" font-size="304" fill="#fbfaf7">RW</text>
+
+      <path class="rock" d="M224 221 C262 218 294 231 294 263 C294 294 269 311 226 311 L198 311 L198 226 C207 224 216 222 224 221 Z"/>
+      <path class="rock" d="M246 358 L322 438 L270 438 L205 366 Z"/>
+
+      <path class="accent" d="M34 438 C171 475 297 475 416 438 C558 396 700 397 838 438 L838 469 C700 429 558 428 416 469 C297 506 171 506 34 469 Z"/>
+    </g>
+
+    <g transform="translate(166 635)">
+      <text class="word" font-size="74">Rock'n'Wall Praha</text>
+    </g>
+
+    <g transform="translate(1070 152)">
+      <text x="0" y="0" class="word" font-size="20" fill="#66707a">Samostatná značka</text>
+      <rect x="0" y="32" width="250" height="250" rx="32" fill="#1d252d"/>
+      <path d="M28 201 L28 184 L68 139 L99 155 L151 71 L185 117 L227 53 L227 201 Z" fill="#fbfaf7"/>
+      <path d="M151 71 L185 117 L227 53 L227 201 L168 201 Z" fill="#1f5782"/>
+      <text x="42" y="210" class="rw" font-size="120" fill="#1d252d">RW</text>
+      <path d="M45 214 C88 226 131 226 174 214 C193 208 211 207 227 211 L227 224 C211 220 193 221 174 227 C131 239 88 239 45 227 Z" fill="#b74c2d"/>
+      <text x="0" y="326" class="note">Použití pro favicon a malé formáty.</text>
+    </g>
+  </g>
+</svg>

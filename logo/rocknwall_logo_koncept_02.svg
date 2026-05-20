@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha z.s. - logo koncept 02</title>
+  <desc id="desc">Logo koncept bez lezce: silueta hor a skály, do které jsou vložená písmena R a W jako značka Rock'n'Wall.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .panel { fill: #fffdf8; stroke: #ded8cf; stroke-width: 2; rx: 24; }
+      .ink { fill: #1d252d; }
+      .rock { fill: #20272d; }
+      .wall { fill: #1f5782; }
+      .accent { fill: #b74c2d; }
+      .muted { fill: #66707a; }
+      .cut { fill: #fbfaf7; }
+      .line { fill: none; stroke: #fbfaf7; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; opacity: 0.92; }
+      .line-dark { fill: none; stroke: #1d252d; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; fill: #1d252d; letter-spacing: 0; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-weight: 700; fill: #66707a; letter-spacing: 2px; }
+      .note { font-family: Arial, Helvetica, sans-serif; fill: #66707a; font-size: 20px; }
+      .rw { font-family: Arial Black, Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: -16px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="90" y="88" class="word" font-size="42">Rock'n'Wall Praha z.s.</text>
+  <text x="92" y="124" class="note">Koncept 02: bez lezce, výraznější horsko-skalní silueta, písmena vložená do značky.</text>
+
+  <g transform="translate(90 170)">
+    <rect class="panel" width="1420" height="690"/>
+
+    <g transform="translate(130 95)">
+      <!-- Mountain / rock silhouette -->
+      <path class="rock" d="M30 438 L30 410 L125 298 L199 336 L322 146 L401 248 L498 88 L640 300 L706 232 L838 438 Z"/>
+      <path class="wall" d="M458 438 L498 88 L640 300 L706 232 L838 438 Z" opacity="0.96"/>
+      <path d="M498 88 L548 438 L458 438 Z" fill="#2b6d9d" opacity="0.95"/>
+      <path d="M640 300 L706 232 L838 438 L696 438 Z" fill="#174867" opacity="0.9"/>
+      <path class="accent" d="M30 438 C169 475 296 475 415 438 C558 393 700 396 838 438 L838 471 C700 430 558 427 415 471 C296 508 169 508 30 471 Z"/>
+
+      <!-- Inner ridge lines -->
+      <path class="line" d="M125 298 L188 332 L322 146 L401 248 L498 88 L640 300 L706 232"/>
+      <path class="line" d="M165 412 L236 339 L293 366"/>
+      <path class="line" d="M540 402 L616 314 L682 438"/>
+
+      <!-- RW letters carved into the mountain mass -->
+      <g transform="translate(110 156)">
+        <text x="0" y="232" class="rw" font-size="310" fill="#fbfaf7">RW</text>
+      </g>
+
+      <!-- Subtle dark inner counters to make R readable -->
+      <path class="rock" d="M231 215 C266 212 293 222 293 252 C293 281 270 296 232 296 L203 296 L203 220 C211 218 221 216 231 215 Z"/>
+      <path class="rock" d="M247 346 L333 438 L276 438 L211 363 Z"/>
+    </g>
+
+    <g transform="translate(166 626)">
+      <text class="word" font-size="74">Rock'n'Wall</text>
+      <text x="4" y="48" class="sub" font-size="25">PRAHA Z.S. | LEZECKÝ KLUB</text>
+    </g>
+
+    <g transform="translate(1070 152)">
+      <text x="0" y="0" class="sub" font-size="20">SAMOSTATNÁ ZNAČKA</text>
+      <rect x="0" y="32" width="250" height="250" rx="32" fill="#1d252d"/>
+      <path d="M28 201 L28 184 L67 140 L98 155 L151 70 L185 116 L227 52 L227 201 Z" fill="#fbfaf7"/>
+      <path d="M151 70 L185 116 L227 52 L227 201 L168 201 Z" fill="#1f5782"/>
+      <path d="M45 204 C88 216 131 216 174 204 C193 198 211 197 227 201 L227 216 C211 212 193 213 174 219 C131 231 88 231 45 219 Z" fill="#b74c2d"/>
+      <text x="47" y="184" class="rw" font-size="118" fill="#1d252d">RW</text>
+      <path class="line-dark" d="M67 140 L98 155 L151 70 L185 116 L227 52"/>
+      <text x="0" y="326" class="note">Bez postavičky. Funguje víc jako klubový znak než ilustrace.</text>
+    </g>
+  </g>
+</svg>

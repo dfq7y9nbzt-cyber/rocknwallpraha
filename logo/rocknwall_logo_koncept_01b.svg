@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha z.s. - logo koncept 01b</title>
+  <desc id="desc">Zjednodušený koncept loga: R jako skalní masiv a horský hřeben, W jako stěna, jemná skica lezce bez barevných chytů.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .panel { fill: #fffdf8; stroke: #ded8cf; stroke-width: 2; rx: 24; }
+      .ink { fill: #1d252d; }
+      .rock { fill: #242b31; }
+      .wall { fill: #1f5782; }
+      .wall-dark { fill: #174867; }
+      .wall-light { fill: #2b6d9d; }
+      .accent { fill: #b74c2d; }
+      .muted { fill: #66707a; }
+      .ridge { fill: none; stroke: #fbfaf7; stroke-width: 13; stroke-linecap: round; stroke-linejoin: round; opacity: 0.94; }
+      .crack { fill: none; stroke: #fbfaf7; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; opacity: 0.55; }
+      .climber { fill: none; stroke: #fbfaf7; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; fill: #1d252d; letter-spacing: 0; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-weight: 700; fill: #66707a; letter-spacing: 2px; }
+      .note { font-family: Arial, Helvetica, sans-serif; fill: #66707a; font-size: 20px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="90" y="88" class="word" font-size="42">Rock'n'Wall Praha z.s.</text>
+  <text x="92" y="124" class="note">Koncept 01b: méně prvků, R více jako skála/hřeben, W bez chytů a teček.</text>
+
+  <g transform="translate(90 170)">
+    <rect class="panel" width="1420" height="690"/>
+
+    <g transform="translate(150 104)">
+      <!-- R as rock massif -->
+      <path class="rock" d="M0 430 L0 42 C58 14 130 0 212 9 C312 20 372 78 372 168 C372 235 333 283 263 306 L397 430 L288 430 L178 326 L102 326 L102 430 Z"/>
+      <path class="bg" d="M102 88 L102 247 L199 247 C250 247 284 218 284 174 C284 126 247 101 190 91 C156 85 126 84 102 88 Z"/>
+
+      <!-- Mountain/ridge hint inside the rock -->
+      <path class="ridge" d="M46 302 L96 225 L133 266 L184 174 L252 276 L309 210"/>
+      <path class="crack" d="M53 116 L91 153 L68 207 L112 247"/>
+      <path class="crack" d="M216 38 L191 91 L234 132 L208 184"/>
+
+      <!-- W as wall -->
+      <path class="wall" d="M430 42 L516 430 L624 181 L735 430 L828 42 L742 42 L693 270 L629 118 L594 118 L528 270 L481 42 Z"/>
+      <path class="wall-light" d="M481 42 L528 270 L594 118 L542 42 Z"/>
+      <path class="wall-dark" d="M693 270 L742 42 L828 42 L735 430 Z"/>
+      <path d="M624 181 L735 430 L516 430 Z" fill="#256890" opacity="0.7"/>
+
+      <!-- Minimal climber sketch -->
+      <g transform="translate(542 159)">
+        <circle cx="84" cy="24" r="13" fill="#fbfaf7"/>
+        <path class="climber" d="M78 43 L58 78 L82 113 L111 82"/>
+        <path class="climber" d="M59 78 L28 61"/>
+        <path class="climber" d="M110 82 L143 55"/>
+        <path class="climber" d="M82 113 L53 150"/>
+        <path class="climber" d="M82 113 L119 148"/>
+      </g>
+
+      <!-- calmer base line -->
+      <path class="accent" d="M16 462 C134 492 275 492 397 462 C538 428 680 428 820 462 L820 487 C680 454 538 454 397 487 C275 517 134 517 16 487 Z"/>
+    </g>
+
+    <g transform="translate(175 624)">
+      <text class="word" font-size="74">Rock'n'Wall</text>
+      <text x="4" y="48" class="sub" font-size="25">PRAHA Z.S. | LEZECKÝ KLUB</text>
+    </g>
+
+    <g transform="translate(1076 154)">
+      <text x="0" y="0" class="sub" font-size="20">ZJEDNODUŠENÁ ZNAČKA</text>
+      <rect x="0" y="32" width="235" height="235" rx="30" fill="#1d252d"/>
+      <path d="M42 198 L42 57 C76 44 119 39 161 48 C199 56 220 79 220 113 C220 141 203 160 174 168 L220 198 L177 198 L137 177 L84 177 L84 198 Z" fill="#fbfaf7"/>
+      <path d="M84 84 L84 138 L142 138 C163 138 176 128 176 110 C176 92 161 83 135 81 C115 79 98 80 84 84 Z" fill="#1d252d"/>
+      <path d="M65 174 L103 119 L130 151 L169 91 L210 156" stroke="#1d252d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <path d="M54 208 C96 221 137 221 180 208 C194 204 207 202 220 202 L220 219 C207 219 194 221 180 225 C137 238 96 238 54 225 Z" fill="#b74c2d"/>
+      <text x="0" y="315" class="note">Tahle značka už může fungovat i bez lezce, pokud bude v malých velikostech rušit.</text>
+    </g>
+  </g>
+</svg>

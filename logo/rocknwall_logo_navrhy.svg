@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Návrhy loga Rock'n'Wall Praha z.s.</title>
+  <desc id="desc">Tři jednoduché vektorové návrhy klubového loga pro lezecký klub Rock'n'Wall Praha z.s.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .ink { fill: #1d252d; }
+      .muted { fill: #66707a; }
+      .red { fill: #b74c2d; }
+      .blue { fill: #1f5782; }
+      .green { fill: #3f7654; }
+      .line { stroke: #1d252d; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .thin { stroke: #1d252d; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .panel { fill: #ffffff; stroke: #ded8cf; stroke-width: 2; rx: 18; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 26px; font-weight: 700; fill: #66707a; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-size: 60px; font-weight: 800; fill: #1d252d; letter-spacing: 0; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #66707a; letter-spacing: 2px; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #66707a; }
+      .mono { font-family: Arial, Helvetica, sans-serif; font-size: 44px; font-weight: 900; fill: #ffffff; letter-spacing: 0; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <text x="80" y="76" class="word" font-size="44">Rock'n'Wall Praha z.s.</text>
+  <text x="82" y="112" class="small">První jednoduché směry pro klubové logo. Vše je vektorové a upravitelné.</text>
+
+  <g transform="translate(80 160)">
+    <rect class="panel" width="440" height="620"/>
+    <text x="34" y="52" class="label">Směr A - klubový znak</text>
+    <g transform="translate(82 112)">
+      <circle cx="138" cy="138" r="132" fill="#1d252d"/>
+      <path d="M58 185 L112 92 L150 148 L179 104 L223 185 Z" fill="#fbfaf7"/>
+      <circle cx="116" cy="91" r="12" class="red"/>
+      <path d="M82 203 C125 232 179 232 222 203" stroke="#b74c2d" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <text x="58" y="308" class="word" font-size="38">Rock'n'Wall</text>
+      <text x="84" y="344" class="sub" font-size="19">PRAHA Z.S.</text>
+    </g>
+    <text x="34" y="544" class="small">Použití: razítko, profilovka, dokumenty.</text>
+  </g>
+
+  <g transform="translate(580 160)">
+    <rect class="panel" width="440" height="620"/>
+    <text x="34" y="52" class="label">Směr B - jednoduchý wordmark</text>
+    <g transform="translate(56 140)">
+      <path class="line" d="M20 160 L92 42 L157 130 L206 72 L300 160"/>
+      <path class="thin" d="M32 194 H306"/>
+      <circle cx="93" cy="42" r="13" class="red"/>
+      <circle cx="206" cy="72" r="13" class="green"/>
+      <text x="0" y="282" class="word" font-size="48">Rock'n'Wall</text>
+      <text x="4" y="320" class="sub" font-size="18">PRAHA Z.S. | LEZECKÝ KLUB</text>
+    </g>
+    <text x="34" y="544" class="small">Použití: web, hlavička e-mailu, dokumenty.</text>
+  </g>
+
+  <g transform="translate(1080 160)">
+    <rect class="panel" width="440" height="620"/>
+    <text x="34" y="52" class="label">Směr C - kompaktní značka</text>
+    <g transform="translate(76 126)">
+      <rect x="0" y="0" width="288" height="288" rx="34" fill="#1f5782"/>
+      <path d="M42 205 L95 86 L139 154 L177 102 L246 205 Z" fill="#fbfaf7"/>
+      <path d="M70 218 H219" stroke="#b74c2d" stroke-width="13" stroke-linecap="round"/>
+      <text x="61" y="266" class="mono">R'n'W</text>
+      <text x="0" y="368" class="word" font-size="40">Rock'n'Wall</text>
+      <text x="46" y="402" class="sub" font-size="18">PRAHA Z.S.</text>
+    </g>
+    <text x="34" y="544" class="small">Použití: favicon, sociální sítě, merch.</text>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha z.s. - logo koncept 02b</title>
+  <desc id="desc">Čitelnější verze horsko-skalního loga Rock'n'Wall s výrazným monogramem RW.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .panel { fill: #fffdf8; stroke: #ded8cf; stroke-width: 2; rx: 24; }
+      .ink { fill: #1d252d; }
+      .rock { fill: #20272d; }
+      .wall { fill: #1f5782; }
+      .wall-dark { fill: #174867; }
+      .accent { fill: #b74c2d; }
+      .muted { fill: #66707a; }
+      .paper { fill: #fbfaf7; }
+      .ridge { fill: none; stroke: #fbfaf7; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; opacity: 0.82; }
+      .ridge-dark { fill: none; stroke: #1d252d; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; opacity: 0.8; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; fill: #1d252d; letter-spacing: 0; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-weight: 700; fill: #66707a; letter-spacing: 2px; }
+      .note { font-family: Arial, Helvetica, sans-serif; fill: #66707a; font-size: 20px; }
+      .rw { font-family: Arial Black, Arial, Helvetica, sans-serif; font-weight: 900; letter-spacing: -6px; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <text x="90" y="88" class="word" font-size="42">Rock'n'Wall Praha z.s.</text>
+  <text x="92" y="124" class="note">Koncept 02b: stejný motiv, výraznější a čitelnější RW.</text>
+
+  <g transform="translate(90 170)">
+    <rect class="panel" width="1420" height="690"/>
+
+    <g transform="translate(132 100)">
+      <!-- Mountain / wall silhouette, simplified -->
+      <path class="rock" d="M30 438 L30 410 L123 294 L196 330 L320 142 L402 242 L500 84 L642 294 L708 232 L840 438 Z"/>
+      <path class="wall" d="M468 438 L500 84 L642 294 L708 232 L840 438 Z"/>
+      <path class="wall-dark" d="M642 294 L708 232 L840 438 L702 438 Z"/>
+      <path class="accent" d="M30 438 C168 474 296 474 416 438 C557 396 701 396 840 438 L840 469 C701 429 557 429 416 469 C296 505 168 505 30 469 Z"/>
+
+      <!-- Clear monogram plate cut into the mass -->
+      <path class="paper" d="M118 188 L586 188 C642 188 683 230 683 286 L683 384 C683 416 661 438 629 438 L118 438 Z"/>
+
+      <!-- RW as strong dark monogram -->
+      <text x="145" y="404" class="rw" font-size="292" fill="#20272d">RW</text>
+
+      <!-- Mountain returns above/around the monogram -->
+      <path class="ridge" d="M122 294 L196 330 L320 142 L402 242 L500 84 L642 294 L708 232"/>
+      <path class="ridge-dark" d="M504 202 L554 320 L624 190 L702 404"/>
+
+      <!-- Diagonal cuts making R feel more rock-like without hurting readability -->
+      <path class="paper" opacity="0.92" d="M75 370 L135 303 L166 326 L96 407 Z"/>
+      <path class="paper" opacity="0.82" d="M244 188 L294 188 L252 248 L220 232 Z"/>
+    </g>
+
+    <g transform="translate(166 626)">
+      <text class="word" font-size="74">Rock'n'Wall</text>
+      <text x="4" y="48" class="sub" font-size="25">PRAHA Z.S. | LEZECKÝ KLUB</text>
+    </g>
+
+    <g transform="translate(1070 152)">
+      <text x="0" y="0" class="sub" font-size="20">SAMOSTATNÁ ZNAČKA</text>
+      <rect x="0" y="32" width="250" height="250" rx="32" fill="#1d252d"/>
+      <path d="M28 201 L28 184 L67 140 L98 155 L151 70 L185 116 L227 52 L227 201 Z" fill="#fbfaf7"/>
+      <path d="M151 70 L185 116 L227 52 L227 201 L168 201 Z" fill="#1f5782"/>
+      <rect x="54" y="128" width="154" height="83" rx="10" fill="#fbfaf7"/>
+      <text x="57" y="204" class="rw" font-size="98" fill="#1d252d">RW</text>
+      <path d="M45 214 C88 226 131 226 174 214 C193 208 211 207 227 211 L227 224 C211 220 193 221 174 227 C131 239 88 239 45 227 Z" fill="#b74c2d"/>
+      <path class="ridge-dark" d="M67 140 L98 155 L151 70 L185 116 L227 52"/>
+      <text x="0" y="326" class="note">Čitelnější monogram pro malé použití.</text>
+    </g>
+  </g>
+</svg>

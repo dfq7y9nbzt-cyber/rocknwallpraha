@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Rock'n'Wall Praha z.s. - logo koncept 01</title>
+  <desc id="desc">Jednoduchý vektorový návrh loga: písmeno R jako skála, W jako lezecká stěna a subtilní skica lezce na boulderu.</desc>
+  <defs>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .ink { fill: #1d252d; }
+      .muted { fill: #66707a; }
+      .rock { fill: #2b3238; }
+      .wall { fill: #1f5782; }
+      .accent { fill: #b74c2d; }
+      .green { fill: #3f7654; }
+      .panel { fill: #fffdf8; stroke: #ded8cf; stroke-width: 2; rx: 24; }
+      .word { font-family: Arial, Helvetica, sans-serif; font-weight: 900; fill: #1d252d; letter-spacing: 0; }
+      .sub { font-family: Arial, Helvetica, sans-serif; font-weight: 700; fill: #66707a; letter-spacing: 2px; }
+      .note { font-family: Arial, Helvetica, sans-serif; fill: #66707a; font-size: 20px; }
+      .line { fill: none; stroke: #1d252d; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .line-soft { fill: none; stroke: #fbfaf7; stroke-width: 11; stroke-linecap: round; stroke-linejoin: round; }
+      .climber { fill: none; stroke: #fbfaf7; stroke-width: 12; stroke-linecap: round; stroke-linejoin: round; }
+      .climber-dark { fill: none; stroke: #1d252d; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+
+  <text x="90" y="88" class="word" font-size="42">Rock'n'Wall Praha z.s.</text>
+  <text x="92" y="124" class="note">Koncept 01: R jako skála, W jako wall, skica lezce jako lehký sportovní detail.</text>
+
+  <g transform="translate(90 170)">
+    <rect class="panel" width="1420" height="690"/>
+
+    <!-- Main mark -->
+    <g transform="translate(145 105)">
+      <!-- R / rock mass -->
+      <path class="rock" d="M0 430 L0 32 C58 8 130 0 212 13 C310 30 364 85 364 169 C364 238 326 286 257 309 L391 430 L285 430 L176 326 L99 326 L99 430 Z"/>
+      <path class="bg" d="M99 91 L99 247 L197 247 C247 247 280 219 280 175 C280 130 246 102 190 94 C158 89 128 88 99 91 Z"/>
+      <path class="bg" d="M43 112 L76 70 L119 91 L99 128 L132 165 L98 207 L119 247 L83 284 L99 326 L59 362 L72 414 L0 430 L0 32 L46 58 Z" opacity="0.16"/>
+      <path class="line-soft" d="M64 70 L103 98 L86 140 L125 178 L93 219 L124 262 L98 304"/>
+
+      <!-- W / wall planes -->
+      <path class="wall" d="M420 32 L506 430 L620 173 L733 430 L826 32 L738 32 L690 270 L624 112 L590 112 L524 270 L477 32 Z"/>
+      <path d="M477 32 L524 270 L590 112 L540 32 Z" fill="#2b6d9d"/>
+      <path d="M690 270 L738 32 L826 32 L733 430 Z" fill="#174867"/>
+      <path d="M620 173 L733 430 L524 430 Z" fill="#256890" opacity="0.72"/>
+
+      <!-- climbing holds on W -->
+      <circle cx="535" cy="184" r="15" class="accent"/>
+      <circle cx="642" cy="152" r="14" fill="#fbfaf7"/>
+      <circle cx="704" cy="250" r="16" class="green"/>
+      <circle cx="596" cy="308" r="13" fill="#fbfaf7"/>
+
+      <!-- sketch climber -->
+      <g transform="translate(526 148)">
+        <circle cx="96" cy="38" r="16" fill="#fbfaf7"/>
+        <path class="climber" d="M88 58 L62 103 L93 139 L131 101"/>
+        <path class="climber" d="M64 104 L23 82"/>
+        <path class="climber" d="M129 101 L172 64"/>
+        <path class="climber" d="M93 139 L54 188"/>
+        <path class="climber" d="M93 139 L142 183"/>
+      </g>
+
+      <!-- underline / boulder base -->
+      <path class="accent" d="M8 462 C143 498 270 499 391 462 C532 421 672 421 820 462 L820 493 C672 452 532 452 391 493 C270 530 143 529 8 493 Z"/>
+    </g>
+
+    <!-- Wordmark -->
+    <g transform="translate(170 625)">
+      <text class="word" font-size="74">Rock'n'Wall</text>
+      <text x="4" y="48" class="sub" font-size="25">PRAHA Z.S. | LEZECKÝ KLUB</text>
+    </g>
+
+    <!-- Standalone small mark preview -->
+    <g transform="translate(1075 154)">
+      <text x="0" y="0" class="sub" font-size="20">SAMOSTATNÁ ZNAČKA</text>
+      <rect x="0" y="32" width="235" height="235" rx="30" fill="#1d252d"/>
+      <path d="M42 190 L42 55 C74 43 114 39 158 47 C199 55 220 78 220 111 C220 138 205 157 177 166 L223 190 L177 190 L137 171 L84 171 L84 190 Z" fill="#fbfaf7"/>
+      <path d="M84 83 L84 136 L142 136 C163 136 176 126 176 109 C176 91 161 82 135 80 C115 78 98 79 84 83 Z" fill="#1d252d"/>
+      <path d="M57 199 C96 213 137 213 181 199 C194 195 207 193 220 193 L220 211 C207 211 194 213 181 217 C137 231 96 231 57 217 Z" fill="#b74c2d"/>
+      <path class="climber-dark" d="M118 97 L101 124 L123 147 L151 119"/>
+      <circle cx="123" cy="82" r="9" fill="#1d252d"/>
+      <circle cx="154" cy="105" r="8" fill="#b74c2d"/>
+      <text x="0" y="315" class="note">Detail lezce by šel ubrat, zjemnit nebo úplně vypnout pro malé velikosti.</text>
+    </g>
+  </g>
+</svg>
