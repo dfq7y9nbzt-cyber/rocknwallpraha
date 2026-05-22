@@ -100,6 +100,18 @@ a {
   color: var(--white);
 }
 
+.page-hero {
+  padding: clamp(72px, 10vw, 132px) clamp(18px, 4vw, 56px) clamp(52px, 8vw, 86px);
+  background:
+    linear-gradient(120deg, rgba(25, 23, 20, 0.82), rgba(25, 23, 20, 0.44)),
+    url("https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=1800&q=80") center/cover;
+  color: var(--white);
+}
+
+.page-hero > div {
+  max-width: 920px;
+}
+
 .hero-content {
   max-width: 860px;
 }
@@ -186,6 +198,11 @@ h3 {
 .button.secondary {
   color: var(--white);
   border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.button.secondary.dark {
+  color: var(--accent-dark);
+  border-color: rgba(130, 48, 31, 0.32);
 }
 
 .hero-panel {
@@ -417,6 +434,101 @@ tbody tr:last-child td {
   margin: 0;
 }
 
+.gallery-event {
+  margin-top: 28px;
+  padding: clamp(18px, 3vw, 30px);
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.gallery-event-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.34fr);
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.gallery-event-head h2 {
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+}
+
+.gallery-event-head p {
+  max-width: 780px;
+  color: var(--muted);
+}
+
+.event-meta {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.event-meta span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.event-meta strong {
+  color: var(--ink);
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.photo-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.photo-card > a {
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--soft);
+}
+
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-card figcaption {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+}
+
+.photo-card figcaption span {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.photo-card figcaption a {
+  color: var(--accent-dark);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.photo-card figcaption a:hover {
+  text-decoration: underline;
+}
+
+.placeholder-event {
+  background: var(--soft);
+}
+
 .steps {
   display: grid;
   gap: 12px;
@@ -543,8 +655,13 @@ tbody tr:last-child td {
   .split,
   .grid.three,
   .grid.two,
-  .signup-box {
+  .signup-box,
+  .gallery-event-head {
     grid-template-columns: 1fr;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .signup-box .button.primary {
@@ -578,5 +695,9 @@ tbody tr:last-child td {
 
   .hero-logo {
     padding: 14px 15px 12px;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
   }
 }
