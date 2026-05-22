@@ -284,6 +284,26 @@ h3 {
   color: var(--muted);
 }
 
+.club-note {
+  display: grid;
+  gap: 8px;
+  margin-top: 22px;
+  padding: 16px;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.club-note p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.96rem;
+}
+
+.club-note strong {
+  color: var(--accent-dark);
+}
+
 .course-types .card {
   display: grid;
   align-content: start;
