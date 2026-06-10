@@ -251,11 +251,11 @@ h3 {
 }
 
 #klub {
-  padding-bottom: clamp(28px, 4vw, 44px);
+  padding-bottom: clamp(14px, 2.4vw, 24px);
 }
 
 #krouzky {
-  padding-top: clamp(30px, 4.5vw, 48px);
+  padding-top: clamp(18px, 3vw, 28px);
 }
 
 .muted {
