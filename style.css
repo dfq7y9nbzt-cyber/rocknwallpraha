@@ -368,9 +368,22 @@ h3 {
   color: rgba(255, 255, 255, 0.86);
 }
 
+.signup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 .signup-box .button.primary {
   background: var(--white);
   color: var(--green);
+  white-space: nowrap;
+}
+
+.signup-box .button.secondary {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
 }
 
@@ -711,7 +724,7 @@ tbody tr:last-child td {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .signup-box .button.primary {
+  .signup-box .button {
     width: fit-content;
   }
 
@@ -735,7 +748,11 @@ tbody tr:last-child td {
     width: 100%;
   }
 
-  .signup-box .button.primary {
+  .signup-actions {
+    width: 100%;
+  }
+
+  .signup-box .button {
     width: 100%;
     white-space: normal;
   }
