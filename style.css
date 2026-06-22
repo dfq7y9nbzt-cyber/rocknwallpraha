@@ -387,6 +387,60 @@ h3 {
   white-space: nowrap;
 }
 
+.faq-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 18px 20px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 20px 20px;
+  color: var(--muted);
+}
+
+.faq-item a {
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.faq-note {
+  margin-top: 22px;
+  padding: 22px;
+  color: #243b2d;
+  background: #e2efe6;
+  border: 1px solid rgba(63, 118, 84, 0.25);
+  border-radius: 8px;
+}
+
+.faq-note h3,
+.faq-note p {
+  margin: 0;
+}
+
+.faq-note p {
+  margin-top: 6px;
+}
+
 .app-download {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
