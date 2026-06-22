@@ -387,6 +387,56 @@ h3 {
   white-space: nowrap;
 }
 
+.app-download {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 22px;
+  align-items: center;
+  margin: -12px 0 34px;
+  padding: 22px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.app-download h3,
+.app-download p {
+  margin: 0;
+}
+
+.app-download p:not(.eyebrow) {
+  max-width: 680px;
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.app-links {
+  display: flex;
+  gap: 14px;
+}
+
+.app-links article {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.app-links img {
+  width: 118px;
+  height: 118px;
+  padding: 8px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.app-links .button {
+  min-height: 38px;
+  padding: 9px 12px;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+
 .button.inactive {
   cursor: default;
 }
@@ -715,6 +765,7 @@ tbody tr:last-child td {
   .grid.three,
   .grid.two,
   .signup-box,
+  .app-download,
   .payment-box,
   .gallery-event-head {
     grid-template-columns: 1fr;
@@ -726,6 +777,10 @@ tbody tr:last-child td {
 
   .signup-box .button {
     width: fit-content;
+  }
+
+  .app-links {
+    justify-content: flex-start;
   }
 
   .hero {
@@ -753,6 +808,16 @@ tbody tr:last-child td {
   }
 
   .signup-box .button {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .app-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .app-links .button {
     width: 100%;
     white-space: normal;
   }
