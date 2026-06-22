@@ -597,6 +597,16 @@ tbody tr:last-child td {
   margin: 0;
 }
 
+.important-note {
+  border-color: rgba(192, 71, 45, 0.28);
+  background: #fff0e8;
+  color: var(--ink);
+}
+
+.important-note h3 {
+  color: var(--accent-dark);
+}
+
 .gallery-event {
   margin-top: 28px;
   padding: clamp(18px, 3vw, 30px);
