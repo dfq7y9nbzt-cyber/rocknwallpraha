@@ -432,6 +432,117 @@ h3 {
   border-radius: 8px;
 }
 
+/* Illustrated KIS guides inside the replacements FAQ. */
+#nahrady {
+  scroll-margin-top: 110px;
+}
+
+.kis-guides {
+  display: grid;
+  gap: 12px;
+  margin: 0 20px 20px;
+}
+
+.kis-guide {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+}
+
+.kis-guide > summary {
+  padding: 16px;
+  color: var(--accent-dark);
+}
+
+.kis-guide > summary:hover {
+  background: var(--soft);
+  border-radius: 8px;
+}
+
+.kis-guide summary:focus-visible,
+.kis-guide a:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 3px;
+}
+
+.kis-guide-body {
+  padding: 0 16px 16px;
+}
+
+.kis-guide-body p {
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+.kis-guide-hint {
+  font-size: 0.9rem;
+}
+
+.kis-guide-steps {
+  list-style: none;
+  display: grid;
+  gap: 24px;
+  padding: 0;
+  margin: 24px 0 0;
+}
+
+.kis-guide-steps > li {
+  min-width: 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.kis-guide-steps h3 {
+  font-size: 1.05rem;
+}
+
+.kis-guide-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.kis-guide-images figure {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.kis-guide-aplikace figure {
+  max-width: 320px;
+}
+
+.kis-guide-pc figure {
+  max-width: 1100px;
+}
+
+.kis-guide-images a {
+  display: block;
+  cursor: zoom-in;
+}
+
+.kis-guide-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+@media (max-width: 560px) {
+  .kis-guides {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+
+  .kis-guide-body {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
 .faq-note h3,
 .faq-note p {
   margin: 0;
