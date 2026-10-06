@@ -531,6 +531,119 @@ h3 {
   border-radius: 6px;
 }
 
+@media (min-width: 901px) {
+  .kis-guide-aplikace {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .kis-guide-pc {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .kis-guide-steps > li {
+    padding: 12px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+  }
+
+  .kis-guide-steps h3 {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+
+  .kis-guide-steps p {
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  .kis-guide-images {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .kis-guide-aplikace figure {
+    width: auto;
+    max-width: 50%;
+  }
+
+  .kis-guide-images img {
+    width: auto;
+    max-width: 100%;
+    height: 140px;
+    object-fit: contain;
+  }
+
+  .kis-guide-pc img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.kis-lightbox {
+  width: min(1200px, calc(100% - 24px));
+  max-width: calc(100% - 24px);
+  max-height: calc(100dvh - 24px);
+  padding: 16px;
+  color: var(--ink);
+  background: var(--paper);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.kis-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.kis-lightbox-toolbar,
+.kis-lightbox-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.kis-lightbox button {
+  min-height: 44px;
+  padding: 8px 14px;
+  color: var(--accent-dark);
+  font: inherit;
+  font-weight: 700;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.kis-lightbox button:focus-visible {
+  outline: 3px solid var(--accent-dark);
+  outline-offset: 2px;
+}
+
+.kis-lightbox p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.kis-lightbox-image {
+  display: block;
+  width: 100%;
+  height: min(70dvh, 800px);
+  object-fit: contain;
+  margin: 12px auto;
+}
+
+.kis-lightbox-caption {
+  text-align: center;
+}
+
+.kis-lightbox-open {
+  overflow: hidden;
+}
+
 @media (max-width: 560px) {
   .kis-guides {
     margin-right: 12px;

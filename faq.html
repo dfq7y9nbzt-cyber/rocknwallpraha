@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FAQ pro rodiče | Rock'n'Wall Praha z.s.</title>
     <meta name="description" content="Praktické informace k přihlášení do kroužků Rock'n'Wall Praha z.s., platbám, náhradám, docházce a komunikaci v systému KIS.">
-    <link rel="stylesheet" href="style.css?v=kis-20261006">
+    <link rel="stylesheet" href="style.css?v=kis-gallery-20261006">
   </head>
   <body>
     <header class="site-header">
@@ -389,5 +389,75 @@
       <p>© 2026 Rock'n'Wall Praha z.s.</p>
       <p><a href="index.html#uvod">Zpět na hlavní stránku</a></p>
     </footer>
+    <dialog class="kis-lightbox" aria-label="Obrázkový návod KIS">
+      <div class="kis-lightbox-toolbar">
+        <p class="kis-lightbox-position" aria-live="polite"></p>
+        <button type="button" class="kis-lightbox-close" autofocus>Zavřít ×</button>
+      </div>
+      <img class="kis-lightbox-image" alt="">
+      <p class="kis-lightbox-caption"></p>
+      <div class="kis-lightbox-controls">
+        <button type="button" class="kis-lightbox-prev">← Předchozí</button>
+        <button type="button" class="kis-lightbox-next">Další →</button>
+      </div>
+    </dialog>
+    <script>
+      (() => {
+        const dialog = document.querySelector('.kis-lightbox');
+        if (!dialog || typeof dialog.showModal !== 'function') return;
+        const image = dialog.querySelector('.kis-lightbox-image');
+        const caption = dialog.querySelector('.kis-lightbox-caption');
+        const position = dialog.querySelector('.kis-lightbox-position');
+        const previous = dialog.querySelector('.kis-lightbox-prev');
+        const next = dialog.querySelector('.kis-lightbox-next');
+        let pictures = [];
+        let current = 0;
+        let opener;
+        const show = (index) => {
+          current = (index + pictures.length) % pictures.length;
+          const thumbnail = pictures[current].querySelector('img');
+          image.src = pictures[current].href;
+          image.alt = thumbnail.alt;
+          caption.textContent = thumbnail.alt;
+          position.textContent = `Obrázek ${current + 1} z ${pictures.length}`;
+        };
+        document.querySelectorAll('.kis-guide').forEach((guide) => {
+          const links = Array.from(guide.querySelectorAll('.kis-guide-images a'));
+          guide.querySelector('.kis-guide-hint').textContent = 'Kliknutím obrázek zvětšíte. Mezi obrázky můžete přepínat šipkami.';
+          links.forEach((link, index) => {
+            link.setAttribute('aria-label', link.querySelector('img').alt + ' – zvětšit');
+            link.setAttribute('aria-haspopup', 'dialog');
+            link.addEventListener('click', (event) => {
+              if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+              event.preventDefault();
+              pictures = links;
+              opener = link;
+              show(index);
+              dialog.showModal();
+              document.body.classList.add('kis-lightbox-open');
+            });
+          });
+        });
+        previous.addEventListener('click', () => show(current - 1));
+        next.addEventListener('click', () => show(current + 1));
+        dialog.querySelector('.kis-lightbox-close').addEventListener('click', () => dialog.close());
+        dialog.addEventListener('click', (event) => {
+          if (event.target === dialog) {
+            const bounds = dialog.getBoundingClientRect();
+            if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+          }
+        });
+        dialog.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+            event.preventDefault();
+            show(current + (event.key === 'ArrowRight' ? 1 : -1));
+          }
+        });
+        dialog.addEventListener('close', () => {
+          document.body.classList.remove('kis-lightbox-open');
+          opener?.focus({ preventScroll: true });
+        });
+      })();
+    </script>
   </body>
 </html>
